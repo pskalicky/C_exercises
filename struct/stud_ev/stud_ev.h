@@ -7,4 +7,15 @@ typedef struct {
     float gpa;      // Grade Point Average of the student
 } Student;
 
+typedef enum {
+    STATE_BEGIN,
+    STATE_WAITING_ID,
+    STATE_WAITING_NAME,
+    STATE_WAITING_AGE,
+    STATE_WAITING_GPA,
+    STATE_CANCELLED,
+    STATE_ERROR,
+    STATE_END
+} create_student_state;
+
 #endif //STUD_EV_H
